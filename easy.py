@@ -1,3 +1,35 @@
+
+
+# Longest Common Prefix
+
+# Input: strs = ["flower","flow","flight"]
+# Output: "fl"
+
+# Input: strs = ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+
+def longestCommonPrefix(strs):
+    output = ""
+    smallestStr = min(strs, key=len)#cir
+    for i in range(len(smallestStr)):#3
+        thisChar = smallestStr[i] # 0- c
+        allStringsHasChar=True
+        for j in range(len(strs)):#2
+            #the char needs to exist in i index of all the strings in strs
+            if(thisChar != strs[j][i]):
+                allStringsHasChar=False
+        if(allStringsHasChar):
+            output+=smallestStr[i]
+        else:
+            break
+    return output
+
+print(longestCommonPrefix(["cir","car"]))
+
+
+#___________________________________________________________________________________________________________
+
 # Roman to Integer
 # Input: s = "MCMXCIV"
 # Output: 1994
