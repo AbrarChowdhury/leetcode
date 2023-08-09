@@ -1,31 +1,56 @@
+# Valid Parentheses
+# Input: s = "()"
+# Output: true
+# Input: s = "()[]{}"
+# Output: true
+# Input: s = "(]"
+# Output: false
 
 
-# Longest Common Prefix
+# the number starts should be equal to the number of end
+# the next number should be ending
+# what happens If we have a odd list?
 
-# Input: strs = ["flower","flow","flight"]
-# Output: "fl"
+def isValid(s):
+    brackets = { "(":")", "[":"]", "{":"}" }
+    output = True
+    if(len(s)%2==0):
+        for i in range(0,len(s)-1,2):
+            if(brackets[s[i]]!=s[i+1]):
+                output=False
+    else:
+        output=False
+    return output 
+    
+print(isValid("()[]{}"))
+#___________________________________________________________________________________________________________
 
-# Input: strs = ["dog","racecar","car"]
-# Output: ""
-# Explanation: There is no common prefix among the input strings.
+# # Longest Common Prefix
 
-def longestCommonPrefix(strs):
-    output = ""
-    smallestStr = min(strs, key=len)#cir
-    for i in range(len(smallestStr)):#3
-        thisChar = smallestStr[i] # 0- c
-        allStringsHasChar=True
-        for j in range(len(strs)):#2
-            #the char needs to exist in i index of all the strings in strs
-            if(thisChar != strs[j][i]):
-                allStringsHasChar=False
-        if(allStringsHasChar):
-            output+=smallestStr[i]
-        else:
-            break
-    return output
+# # Input: strs = ["flower","flow","flight"]
+# # Output: "fl"
 
-print(longestCommonPrefix(["cir","car"]))
+# # Input: strs = ["dog","racecar","car"]
+# # Output: ""
+# # Explanation: There is no common prefix among the input strings.
+
+# def longestCommonPrefix(strs):
+#     output = ""
+#     smallestStr = min(strs, key=len)#cir
+#     for i in range(len(smallestStr)):#3
+#         thisChar = smallestStr[i] # 0- c
+#         allStringsHasChar=True
+#         for j in range(len(strs)):#2
+#             #the char needs to exist in i index of all the strings in strs
+#             if(thisChar != strs[j][i]):
+#                 allStringsHasChar=False
+#         if(allStringsHasChar):
+#             output+=smallestStr[i]
+#         else:
+#             break
+#     return output
+
+# print(longestCommonPrefix(["cir","car"]))
 
 
 #___________________________________________________________________________________________________________
