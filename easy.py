@@ -8,7 +8,7 @@
 
 
 # the number starts should be equal to the number of end
-# the next number should be ending
+# the next number should be ending---->I got this part wrong. [{}]{} this is also a valid string
 # what happens If we have a odd list?
 
 def isValid(s):
