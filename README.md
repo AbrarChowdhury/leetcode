@@ -1,18 +1,20 @@
 ## My Approach
 
-Its Important to keep things nice and easy If I want to do this regurarly. Its also important to gradually start increasing diffulty to keep it fun
+Its Important to keep things nice and easy If I want to do this regurarly. Its also important to gradually increase diffulty to keep it fun. Building the habit of sovling problems to stay nice and sharp is the ultimate goal
 
-- solve relatively easy problems
-- keep increasing difficulty gradually to keep it engaging an d fun
+- Build the habit
+- Solve relatively easy problems
+- Increase difficulty gradually
 
 ## Method
-- chose a tag/topic starting with easiest
-- use gpt to learn as much about the topic as possible
-- solve them untill they become second nature
-- pick next topic and repeat
 
+- Chose a tag/topic starting with easiest
+- Use gpt to learn as much about the topic as possible
+- Solve them untill they become second nature
+- Pick next topic and repeat
 
 ## Topics to Cover
+
 - [ ] Array
 - [ ] Strings
 - [ ] Hash Table
