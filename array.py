@@ -15,21 +15,39 @@
 # https://leetcode.com/problems/remove-element/
 # nums = [3,2,2,3]
 # val = 3
-nums = [0, 1, 2, 2, 3, 0, 4, 2]
-val = 2
+# nums = [0, 1, 2, 2, 3, 0, 4, 2]
+# val = 2
 
 
-def removeElement(nums, val):
-    swappingIndex = len(nums) - 1
-    for j in range(len(nums)):
-        jx = len(nums) - j - 1
-        thisEl = nums[jx]
-        print(thisEl)
-        if thisEl == val:
-            nums[jx] = nums[swappingIndex]
-            nums[swappingIndex] = val
-            swappingIndex -= 1
-    return swappingIndex + 1
+# def removeElement(nums, val):
+#     swappingIndex = len(nums) - 1
+#     for j in range(len(nums)):
+#         jx = len(nums) - j - 1
+#         thisEl = nums[jx]
+#         print(thisEl)
+#         if thisEl == val:
+#             nums[jx] = nums[swappingIndex]
+#             nums[swappingIndex] = val
+#             swappingIndex -= 1
+#     return swappingIndex + 1
 
 
-print(removeElement(nums, val))
+# print(removeElement(nums, val))
+
+# 35
+# https://leetcode.com/problems/search-insert-position/
+
+nums = [1, 3, 5, 6, 9]
+target = 4
+
+
+def searchInsert(nums, target):
+    if len(nums) == 0:
+        return 0
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+
+
+
+print(searchInsert(nums, target))
